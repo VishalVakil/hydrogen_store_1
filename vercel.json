@@ -2,10 +2,17 @@
   "buildCommand": "npx shopify hydrogen build --codegen",
   "outputDirectory": "dist",
   "framework": "hydrogen",
-  "rewrites": [
+  "functions": {
+    "dist/server/index.js": {
+      "runtime": "edge",
+      "memory": 256,
+      "maxDuration": 10
+    }
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/dist/server/index.js"
     }
   ]
 }
