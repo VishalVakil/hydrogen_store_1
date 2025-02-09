@@ -1,5 +1,5 @@
 {
-  "buildCommand": "shopify hydrogen build --codegen",
+  "buildCommand": "npx shopify hydrogen build --codegen",
   "outputDirectory": "dist",
   "framework": "hydrogen",
   "rewrites": [
