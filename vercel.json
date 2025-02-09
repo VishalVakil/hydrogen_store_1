@@ -1,0 +1,11 @@
+{
+  "buildCommand": "shopify hydrogen build --codegen",
+  "outputDirectory": "dist",
+  "framework": "hydrogen",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
