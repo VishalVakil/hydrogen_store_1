@@ -2,15 +2,10 @@
   "installCommand": "npm install",
   "outputDirectory": "dist",
   "framework": "hydrogen",
-  "functions": {
-    "api/server.js": {
-      "runtime": "@vercel/edge@1.1.0"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/server"
+      "dest": "server"
     }
   ]
 }
